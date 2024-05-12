@@ -1,19 +1,18 @@
 
 function positiveOrNegative(inputValue)
 {
-    switch (inputValue) 
+    if (inputValue>0) {
+        console.log("The given number "+inputValue+" is a postive number"); 
+    }
+    else if (inputValue<0)
     {
-        case inputValue>0:
-            return "The Given number "+inputValue+" is a positive number"
-
-        case inputValue<0:
-            return "The Given number "+inputValue+" is a negative number"    
-    
-        default:
-            return "The Given number "+inputValue+" is a neutral number"    
+        console.log("The given number "+inputValue+" is a nagative number"); 
+    }
+    else if(inputValue==0)
+    {
+        console.log("The given number "+inputValue+" is a neutral number");
     }
 
 }
 
-let result = positiveOrNegative(-5)
-console.log(result);
+positiveOrNegative(0)
